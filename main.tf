@@ -1,7 +1,16 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = ">= 4.52.0"
+    }
+  }
+}
 provider "google" {
   project = "test-project-neuroit"
   region  = "us-west1"
 }
+
 
 resource "google_cloudbuild_trigger" "hello-world-trigger" {
   name     = "hello-world-trigger"
