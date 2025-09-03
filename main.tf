@@ -15,3 +15,4 @@ resource "google_cloudbuild_trigger" "hello-world-trigger" {
   }
   filename = "cloudbuild.yaml"
 }
+
