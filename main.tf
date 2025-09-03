@@ -6,6 +6,7 @@ provider "google" {
 resource "google_cloudbuild_trigger" "hello-world-trigger" {
   name     = "hello-world-trigger"
   location = "us-west1"
+  service_account = "798073461085-compute@developer.gserviceaccount.com"
 
   repository_event_config {
     repository = "projects/test-project-neuroit/locations/us-west1/connections/Jashobanta/repositories/Jashobanta-neuro-cloudrun-test"
