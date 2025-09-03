@@ -14,4 +14,6 @@ resource "google_cloudbuild_trigger" "hello-world-trigger" {
     }
   }
   filename = "cloudbuild.yaml"
+  include_build_logs = "INCLUDE_BUILD_LOGS_WITH_STATUS"
 }
+
